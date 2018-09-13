@@ -38,6 +38,12 @@ gem 'cancancan'
 # User Roles
 gem 'rolify'
 
+#Boostrap
+#compiling and serving assets, also a precompressor of scss, sass and coffeescript
+gem 'popper_js', '~> 1.14.3'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'bootstrap'
+
 # Dashboard for application admin
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '~> 1.3'
