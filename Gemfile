@@ -31,6 +31,13 @@ gem 'jbuilder', '~> 2.5'
 #secure credential on application.yml this file is ignoret to repositories
 gem 'figaro'
 
+#User authentication
+gem 'devise'
+#User Permissions
+gem 'cancancan'
+#User Roles
+gem 'rolify'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
