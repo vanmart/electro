@@ -1,21 +1,57 @@
-<h1>landing page</h1>
-<p>this application is for electro stylists service</p>
-<p>pls login or register to enjoy</p>
-<p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Turno Agendado
-  </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-    Asistencia en el hogar
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    La idea es que puedas agendar tu sita con anticipacion, para que no tengas que esperar ni un momento para tu corte o servicio de bellaza en nuestro establecimiento.
+<header>
+  <div class="overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="https://videos.pond5.com/stylist-client-hair-colors-footage-058188802_main_xl.mp4" type="video/mp4">
+  </video>
+  <div class="container h-100">
+    <div class="d-flex text-center h-100">
+      <div class="my-auto w-100 text-white">
+        
+        <h1 class="display-3">Elektro Stylists</h1>
+        <h2>we evolitionate to offer you confort and style</h2>
+        <p>pls login or register to enjoy</p>
+        <% if user_signed_in? %>
+            <%= link_to('Edit registration', edit_user_registration_path,class: 'btn btn-primary') %>
+            <%= link_to('Logout', destroy_user_session_path,class: 'btn btn-primary', :method => :delete) %>        
+        <% else %>
+            <%= link_to('Register', new_user_registration_path,class: 'btn btn-primary')  %>
+            <%= link_to('Login', new_user_session_path,class: 'btn btn-primary')  %>  
+        <% end %>
+        <hr style="color: white; border: 1 !important">
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Turno Agendado
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                Asistencia en el hogar
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body" style="color: black">
+                La idea es que puedas agendar tu sita con anticipacion, para que no tengas que esperar ni un momento para tu corte o servicio de bellaza en nuestro establecimiento.
+            </div>
+        </div>
+        <div class="collapse" id="collapseExample2">
+            <div class="card card-body" style="color: black">
+                Tendras la posibilidad de agendar y solicitar nuestro servicio en tu hogar, te ahorramos incomodidades y tiempos de desplasamientos
+            </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="collapse" id="collapseExample2">
-  <div class="card card-body">
-    Tendras la posibilidad de agendar y solicitar nuestro servicio en tu hogar, te ahorramos incomodidades y tiempos de desplasamientos
+</header>
+
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+        <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+        <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+        <p class="mb-0">
+          Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+        </p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
