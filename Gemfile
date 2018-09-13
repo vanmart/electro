@@ -28,16 +28,19 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-#secure credential on application.yml this file is ignoret to repositories
+# secure credential on application.yml this file is ignoret to repositories
 gem 'figaro'
 
-#User authentication
+# User authentication
 gem 'devise'
-#User Permissions
+# User Permissions
 gem 'cancancan'
-#User Roles
+# User Roles
 gem 'rolify'
 
+# Dashboard for application admin
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '~> 1.3'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
