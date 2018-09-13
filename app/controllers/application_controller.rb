@@ -4,11 +4,27 @@ class ApplicationController < ActionController::Base
   skip_before_action :authenticate_user!, :only => [:landing, :byebye]
   
   def after_sign_in_path_for(resource)
-    welcome_path
+    if resource.has_role? :MasterAdmin
+      rails_admin_path
+    elsif resource.has_role? :Admin
+      welcome_path
+    elsif resource.has_role? :Stylist
+      welcome_path
+    elsif resource.has_role? :Client
+      welcome_path
+    elsif resource.has_role? :Visitor
+      welcome_path
+    else
+      root_path
+    end
   end
 
   def after_sign_out_path_for(resource)
     byebye_path
+  end
+
+  rescue_from CanCan::AccessDenied do |exception|   
+    render :file => "#{Rails.root}/public/access_denied.html", :status => 500, :layout => false
   end
 
 end
