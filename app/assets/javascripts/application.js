@@ -12,6 +12,7 @@
 //
 // commented> require jquery
 // commented> "require bootstrap-sprockets" for single components "bootstrap" all compressed
+//= require jquery
 //= require jquery_ujs
 //= require jquery3
 //= require popper

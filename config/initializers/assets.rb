@@ -3,6 +3,11 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
+# if landing use javascript 
+#Rails.application.config.assets.precompile += %w( landing.js landing.css)
+
+Rails.application.config.assets.precompile += %w( landing.css.scss landing.js)
+
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
