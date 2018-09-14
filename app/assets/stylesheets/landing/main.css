@@ -3304,7 +3304,7 @@ textarea {
   @media (min-width: 768px) {
     .page-footer .footer-left {
       left: 64px;
-      bottom: 32px; } }
+      bottom: 15px; } }
   .page-footer .footer-left p {
     margin-bottom: 0;
     font-size: 0.75rem;
@@ -3320,7 +3320,7 @@ textarea {
   @media (min-width: 768px) {
     .page-footer .footer-right {
       right: 64px;
-      bottom: 32px; } }
+      bottom: 15px; } }
   .page-footer .footer-right .note {
     display: inline-block; }
   .page-footer .footer-right p {
@@ -3399,6 +3399,10 @@ textarea {
 /* 5.1 Default layout settings */
 .section {
   position: relative; }
+  
+.brand{
+  width: 50px;
+}
 
 .section-cover-half-left {
   position: relative;

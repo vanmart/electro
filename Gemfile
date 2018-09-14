@@ -47,6 +47,10 @@ gem 'bootstrap'
 # Dashboard for application admin
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '~> 1.3'
+
+# font wasome icons
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
