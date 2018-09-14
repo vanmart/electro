@@ -6,13 +6,15 @@ Rails.application.config.assets.version = '1.0'
 # if landing use javascript 
 #Rails.application.config.assets.precompile += %w( landing.js landing.css)
 
-Rails.application.config.assets.precompile += %w( landing.css.scss landing.js)
+Rails.application.config.assets.precompile += %w( landing.css.scss)
+Rails.application.config.assets.precompile += %w( landing.js)
 Rails.application.config.assets.precompile += %w( landing/pageloader.css )
 Rails.application.config.assets.precompile += %w( landing/main.css)
 Rails.application.config.assets.precompile += %w( landing/style-default.css )
 Rails.application.config.assets.precompile += %w( landing/jquery.fullpage.min.css )
 Rails.application.config.assets.precompile += %w( landing/swiper.min.css )
 Rails.application.config.assets.precompile += %w( landing/vegas.min.css )
+Rails.application.config.assets.precompile += %w( landing/custom.css )
 
 Rails.application.config.assets.precompile += %w( landing/vendor/modernizr-2.7.1.min.js )
 Rails.application.config.assets.precompile += %w( landing//vendor/jquery-1.12.4.min.js )

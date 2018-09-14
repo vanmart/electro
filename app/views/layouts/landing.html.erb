@@ -65,6 +65,9 @@ http://miradontsoa.com
   <!-- add alt layout here -->
   <%= stylesheet_link_tag    'landing/style-default.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+  <!-- Customization -->
+  <%= stylesheet_link_tag    'landing/custom.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
   <%= javascript_include_tag 'landing/vendor/modernizr-2.7.1.min.js', 'data-turbolinks-track': 'reload' %>
 </head>
 
@@ -130,28 +133,34 @@ http://miradontsoa.com
 
       <!-- Begin of hamburger mainmenu menu -->
       <nav class="navbar-mainmenu">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index-2.html#home">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="item.html">Item</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="demo.html">Demo</a>
-          </li>
-        </ul>
+        <div class="row complete">
+          <div class="col-md-6 col-sm-12">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index-2.html#home">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="item.html">Item</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="demo.html">Demo</a>
+              </li>
+            </ul> 
+          </div>
+          <div class="col-md-6 col-sm-12">
+            Aca renderizamos el login form
+          </div>
+        </div>
+        
       </nav>
       <!-- End of hamburger mainmenu menu -->
-
     </div>
     <!-- end of menu wrapper -->
-
   </header>
   <!-- END OF site header Menu-->
 
@@ -196,8 +205,44 @@ http://miradontsoa.com
             <div class="col-12 col-lg-6 text-left">
               <!-- title and description -->
               <div class="title-desc">
-                <h1 class="display-4 display-title home-title decor anim-1">Elektro</h1>
-                <h4 class="anim-2">The best stylist are here!</h4>
+            
+                <h1 class="display-4 display-title home-title decor anim-1" style="font-family:  'Audiowide', cursive;">ELEKTRO STYLISTS</h1>
+                
+                <h4 class="anim-2">Los mejores estilistas estan aqui!</h4>
+                <p class="anim-2">do you need a haircut? </p>
+                <p class="anim-2">Are you stylist? make the test and join us</p>
+              </div>
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <div class="row">
+                  <div class="col-md-4 col-sm-12 ">
+                    <a class="btn btn-outline-primary btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    +Registro Cliente </a>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <a class="btn btn-outline-primary btn-block" data-toggle="collapse" href="#demo" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    + Estilista </a>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <a class="btn btn-circicon btn-primary btn-block" href="#about">
+                      <span class="icon">
+                        <i class="ion ion-chevron-down"></i>
+                      </span>
+                      <span class="text">Stylist Register</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 text-left collapse" id="demo">
+            
+            
+              <!-- title and description -->
+              <div class="title-desc">
+            
+                <h1 class="display-4 display-title home-title decor anim-1" style="font-family:  'Audiowide', cursive;">ELEKTRO STYLISTS</h1>
+                
+                <h4 class="anim-2">Los mejores estilistas estan aqui!</h4>
                 <p class="anim-2">do you need a haircut? </p>
                 <p class="anim-2">Are you stylist? make the test and join us</p>
               </div>
@@ -213,14 +258,34 @@ http://miradontsoa.com
                 </a>
               </div>
             </div>
+            <div class="col-12 col-lg-6 text-left collapse" id="collapseExample">
 
+            
+              <!-- title and description -->
+              <div class="title-desc">
+            
+                <h1 class="display-4 display-title home-title decor anim-1" style="font-family:  'Audiowide', cursive;">ELEKTRO STYLISTS</h1>
+                
+                <h4 class="anim-2">Los mejores estilistas estan aqui!</h4>
+                <p class="anim-2">do you need a haircut? </p>
+                <p class="anim-2">Are you stylist? make the test and join us</p>
+              </div>
+
+              <!-- Action button -->
+              <div class="btns-action anim-3">
+                <a class="btn btn-circicon btn-primary" href="#about">
+                  <span class="icon">
+                    <i class="ion ion-chevron-down"></i>
+                  </span>
+                  <span class="text">Stylist Register</span>
+                  <span class="text">User or client Register</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="section-aside aside-bottom">
-          <div class="text-right">
-
-          </div>
           <!-- Action button -->
           <div class="btns-action anim-3 text-right">
             <a class="btn btn-outline-white btn-round" href="#contact">
@@ -253,7 +318,7 @@ http://miradontsoa.com
             <div class="col-12 col-md-6 text-left">
               <!-- title and description -->
               <div class="title-desc">
-                <h1 class="display-4 display-title anim-1">About</h1>
+                <h1 class="display-4 display-title anim-1">Estilistas mas puntuados</h1>
                 <h4 class="anim-2">We build things</h4>
                 <p class="anim-2">This describes what we do and what is our mission. At right you can
                   see the awesome people behind. Lorem ipsum magicum dolor sit amet,
@@ -1222,6 +1287,8 @@ http://miradontsoa.com
 
   <!-- scripts -->
   <!-- All Javascript plugins goes here -->
+  <%= javascript_include_tag 'landing', 'data-turbolinks-track': 'reload' %>
+  
   <%= javascript_include_tag 'landing//vendor/jquery-1.12.4.min.js', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'landing/slick/slick.min.js', 'data-turbolinks-track': 'reload' %>
 
@@ -1239,6 +1306,8 @@ http://miradontsoa.com
 
   <!-- Javascript main files -->
   <%= javascript_include_tag 'landing/main.js', 'data-turbolinks-track': 'reload' %>
+
+  
 
 
 </body>
